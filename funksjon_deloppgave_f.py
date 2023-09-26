@@ -15,7 +15,7 @@ def lengste_nullsekvens(tallliste):
     return maks_lengde
 
 # Eksempel på bruk:
-tallliste = [0, 1, 0, 0, 0, 2, 0, 3, 0, 0, 0, 4, 0, 0]
+# tallliste = [0, 1, 0, 0, 0, 2, 0, 3, 0, 0, 0, 4, 0, 0]
 
-lengde = lengste_nullsekvens(tallliste)
-print(f"Lengden på den lengste sammenhengende nullsekvensen er: {lengde}")
+# lengde = lengste_nullsekvens(tallliste)
+# print(f"Lengden på den lengste sammenhengende nullsekvensen er: {lengde}")
