@@ -18,4 +18,4 @@ if a > 0 :
 if a < 0 :
     print('trenden på temperaturen er synkende')
 if a == 0 :
-    print('Temperaturen trender ikke')
+    print('Temperaturen trender ikke i disse tider')
