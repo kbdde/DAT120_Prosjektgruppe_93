@@ -19,3 +19,5 @@ def lengste_nullsekvens(tallliste):
 
 # lengde = lengste_nullsekvens(tallliste)
 # print(f"Lengden på den lengste sammenhengende nullsekvensen er: {lengde}")
+
+#kommentar

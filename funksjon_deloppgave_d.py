@@ -22,3 +22,5 @@ verdi = 3.0
 
 antall_storre_eller_lik = tell_storre_eller_lik(min_liste, verdi)
 print(f"Antall elementer større enn eller lik {verdi}: {antall_storre_eller_lik}")
+
+# kommentar

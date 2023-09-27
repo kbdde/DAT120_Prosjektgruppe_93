@@ -4,3 +4,5 @@ dogn_nedbor = [2, 5, 0, 0, 0, 3, 6, 4, 0, 0, 5, 0, 12, 12, 12, 12, 7, 19]
 temperaturer_tidspunkter = list()
 for index in range(len(temperaturer)):
     temperaturer_tidspunkter.append(index)
+
+#kommentar
