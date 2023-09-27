@@ -2,8 +2,6 @@ from deloppgave_e import differanse_tall_i_liste
 from lister_for_del_1 import temperaturer
 
 temp_endring = differanse_tall_i_liste(temperaturer)
-print(temperaturer)
-print(temp_endring)
 
 for index, endring in enumerate(temp_endring):
     if endring > 0:
