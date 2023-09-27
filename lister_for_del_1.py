@@ -5,4 +5,3 @@ temperaturer_tidspunkter = list()
 for index in range(len(temperaturer)):
     temperaturer_tidspunkter.append(index)
 
-#kommentar
