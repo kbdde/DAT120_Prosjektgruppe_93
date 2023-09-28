@@ -1,21 +1,33 @@
-from deloppgave_k import lineærregresjon
-   
+def lineærregresjon(x_axis, y_axis):
+       
+    n=len(x_axis)
+    sum_x_axis = 0
+    for i in range(n):
+    
+        sum_x_axis += x_axis[i]
+    
+    gjennomsnitt_x = sum_x_axis / n
 
+    sum_y_axis = 0
+    for i in range(n):
+        
+        sum_y_axis += y_axis[i]
+    
+    gjennomsnitt_y = sum_y_axis / n
+    
+    a1=0
+    for i in range(n):
+        a1 += (x_axis[i]-gjennomsnitt_x)*(y_axis[i]-gjennomsnitt_y)
 
-temperaturer = [-5, 2, 6, 13, 9, 22, 28, 19, 24, 12, 5, 1, -3, -8, 2, 8, 15, 18,
-21, 26, 21, 31, 15, 4, 1, -2]
-dogn_nedbor = [2, 5, 0, 0, 0, 3, 6, 4, 0, 0, 5, 0, 12, 12, 12, 12, 7, 19]
-temperaturer_tidspunkter = list()
-for index in range(len(temperaturer)):
-    temperaturer_tidspunkter.append(index)
+    a2=0
+    for i in range(n):
+        a2 += (x_axis[i]-gjennomsnitt_x)**2
 
-a,b=lineærregresjon(temperaturer_tidspunkter, temperaturer)
+    a= a1/a2
 
-print(a,b)
+    b= gjennomsnitt_y-(a*gjennomsnitt_x)
+    
+    print ('f(x)='+str(a)+'x +'+str(b))
+    return a, b
+    
 
-if a > 0 :
-    print('trenden på temperaturen er stigende')
-if a < 0 :
-    print('trenden på temperaturen er synkende')
-if a == 0 :
-    print('Temperaturen trender ikke i disse tider')
