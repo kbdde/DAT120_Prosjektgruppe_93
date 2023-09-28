@@ -11,3 +11,8 @@ for index, endring in enumerate(temp_endring):
     else:
         retning = 'Uforandret'
     print(f'{index}: {retning}')
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
