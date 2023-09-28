@@ -1,7 +1,4 @@
 
-# 271408
-# Gruppeprosjekt deloppgave f
-
 def lengste_nullsekvens(tallliste):
     maks_lengde = 0
     gjeldende_lengde = 0
@@ -14,10 +11,53 @@ def lengste_nullsekvens(tallliste):
         maks_lengde = max(maks_lengde, gjeldende_lengde)
     return maks_lengde
 
-# Eksempel på bruk:
-# tallliste = [0, 1, 0, 0, 0, 2, 0, 3, 0, 0, 0, 4, 0, 0]
+# a. Frivillig, avansert
+def longest_sequence(ints):
+    if len(ints) == 1:
+        return 1, ints[0]
+    
+    output_int = 0
+    longest_seq = 0
+    count = 1
 
-# lengde = lengste_nullsekvens(tallliste)
-# print(f"Lengden på den lengste sammenhengende nullsekvensen er: {lengde}")
+    for i in range(1, len(ints)):
+        if ints[i] == ints[i-1]:
+            count += 1
+            if count > longest_seq:
+                longest_seq = count
+                output_int = ints[i]
+        else:
+            count = 1
+    
+    return longest_seq, output_int
 
-#kommentar
+# b. Frivillig, avansert: Det samme for flyttall, men med en oppgitt toleranse.
+def longest_sequence_of_floats(floats, tolerance):
+    if len(floats) == 1:
+        return 1, floats[0]
+    
+    output_float = 0
+    longest_seq = 0
+    count = 1
+    
+    for i in range(1,len(floats)):
+        for j in range(i+1,len(floats)):
+            if floats[i] >= floats[j] - tolerance and floats[i] <= floats[j] + tolerance:
+                count += 1
+
+                if count > longest_seq:
+                    longest_seq = count
+                    output_float = floats[i]
+            
+            else:
+                count = 1
+                break
+        
+    return longest_seq, output_float
+
+floats = [1.1, 0.9, 0.8, 0.7, 0.6]
+
+ints = [0,0,0,0]
+tolerance = 0.2
+print(longest_sequence_of_floats(floats, tolerance))
+# print(longest_sequence(ints))
