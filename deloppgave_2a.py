@@ -14,9 +14,11 @@ def csv_til_liste(filnavn):
         csv_reader = csv.reader(csv_file, delimiter=';')
         
         resultater = []
-
-        for row in csv_reader:        
-            resultater.append(row)
+    
+        for row in csv_reader:   
+            dato=row[2]
+            if len(dato)==10:
+                resultater.append(row)
             
         return resultater
         
