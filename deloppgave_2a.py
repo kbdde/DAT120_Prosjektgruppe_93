@@ -21,4 +21,6 @@ def csv_til_liste(filnavn):
                 resultater.append(row)
             
         return resultater
-        
+    
+output = csv_til_liste('snoedybder_vaer_en_stasjon_dogn.csv')     
+print(output)
