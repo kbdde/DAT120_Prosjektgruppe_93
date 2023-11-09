@@ -28,13 +28,5 @@ def annual_ski_days(text_file):
 
     return annual_ski_days
 
-
-# annual_ski_days = {}
-# vaer_data = data_parser('snoedybder_vaer_en_stasjon_dogn.csv')
-
-# for row in vaer_data:
-#     date = row['Dato']
-#     dybde = row['Snødybde']
-
-output = annual_ski_days('snoedybder_vaer_en_stasjon_dogn.csv')
-print(output)
+# output = annual_ski_days('snoedybder_vaer_en_stasjon_dogn.csv')
+# print(output)
