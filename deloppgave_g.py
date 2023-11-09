@@ -1,4 +1,4 @@
-def lineærregresjon(x_axis, y_axis):
+def lineaerregresjon(x_axis, y_axis):
        
     n=len(x_axis)
     sum_x_axis = 0
