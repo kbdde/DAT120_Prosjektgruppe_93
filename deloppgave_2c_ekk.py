@@ -8,3 +8,14 @@ x = [key for key in input_text.keys()]
 
 output = lineaerregresjon(x, y)
 print(output)
+
+
+
+        annual_growth[key] = round(vekstrater(value), 10)
+
+    x_values = annual_growth.keys()
+    y_values = annual_growth.values()
+
+    for x, y in zip(x_values, y_values):
+        plt.plot(x, y, label=x)
+        plt.show()

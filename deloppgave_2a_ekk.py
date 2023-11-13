@@ -22,5 +22,5 @@ def data_parser(filnavn):
         parsed_data.pop(0) # removes the headings
         return parsed_data
     
-# output = data_parser('snoedybder_vaer_en_stasjon_dogn.csv')     
-# print(output)
+output = data_parser('snoedybder_vaer_en_stasjon_dogn.csv')     
+print(output)

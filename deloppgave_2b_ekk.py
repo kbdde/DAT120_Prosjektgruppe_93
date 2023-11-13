@@ -28,5 +28,5 @@ def annual_ski_days(text_file):
 
     return annual_ski_days
 
-# output = annual_ski_days('snoedybder_vaer_en_stasjon_dogn.csv')
-# print(output)
+output = annual_ski_days('snoedybder_vaer_en_stasjon_dogn.csv')
+print(output)
